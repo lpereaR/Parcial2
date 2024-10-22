@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Parcial 2</h1>
+    <div class="container">
+      <div class="ejercicio">
+        <h2>Ejercicio 1</h2>
+        <button id="procesarDatos">Procesar Datos</button>
+      </div>
+      <div class="ejercicio">
+        <h2>Simulador de Detonador</h2>
+        <div id="contadorContainer">
+          <span id="estadoContador"></span>
+        </div>
+
+        <img
+          id="explosionImage"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg/800px-Operation_Upshot-Knothole_-_Badger_001.jpg"
+          alt="Bomba activada"
+          style="display: none"
+        />
+
+        <div class="inputs">
+          <label for="decenas">Decenas:</label>
+          <input type="number" id="decenas" min="0" max="9" value="0" />
+
+          <label for="unidades">Unidades:</label>
+          <input type="number" id="unidades" min="0" max="9" value="0" />
+        </div>
+        <button id="startDetonator">Iniciar Detonador</button>
+        <button id="limpiar">Limpiar</button>
+      </div>
+      <div class="ejercicio">
+        <h2>Ejercicio 3 - Asincronismo</h2>
+        <button id="asyncRequest">Async Request</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
